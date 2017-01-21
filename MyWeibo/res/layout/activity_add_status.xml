@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <EditText
+                android:id="@+id/et_add_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="分享新鲜事。。。"
+                android:maxLength="140"
+                android:minLines="3" />
+
+            <com.iotek.myweibo.widget.PictureGridView
+                android:id="@+id/gv_add_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:horizontalSpacing="8dp"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="8dp" >
+            </com.iotek.myweibo.widget.PictureGridView>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_add_pic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/btn_add_pics" />
+
+        <ImageView
+            android:id="@+id/iv_add_at"
+            android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:clickable="true"
+             android:layout_margin="16dp"
+            android:src="@drawable/btn_add_at" />
+
+        <ImageView
+            android:id="@+id/iv_add_tk"
+            android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:clickable="true"
+             android:layout_margin="16dp"
+            android:src="@drawable/btn_add_tk" />
+
+        <ImageView
+            android:id="@+id/iv_add_em"
+            android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:clickable="true"
+             android:layout_margin="16dp"
+            android:src="@drawable/btn_add_em" />
+
+        <ImageView
+            android:id="@+id/iv_add_more"
+            android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:clickable="true"
+             android:layout_margin="16dp"
+            android:src="@drawable/btn_add_more" />
+    </LinearLayout>
+
+</LinearLayout>
